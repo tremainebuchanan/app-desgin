@@ -1,0 +1,79 @@
+body{
+  background-color: #BDC3C7;
+  font-family: 'Lato', sans-serif;
+  color: #434C5F;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login-panel{
+  height: 100vh;
+  padding: 60px 0 0 0;
+}
+
+.login, .signup, .reset-password{
+  margin: 5px auto;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.login{
+  width: 470px;
+  height: 380px;
+}
+
+.signup{
+  width: 470px;
+  height: 410px;
+}
+
+.reset-password{
+  width: 470px;
+  height: 250px;
+}
+
+.login--form{
+  margin-top: 40px;
+  padding: 0 20px 0 20px;
+}
+
+.login--title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.logo{
+  margin: 5px auto;
+  height: 100px;
+  width: 100px;
+}
+
+.logo > img{
+  border-radius: 3px;
+}
+
+.dashboard-panel{
+  height: 80vh;
+  background-color: #f9f9fb;
+}
+
+.dashboard-sub-nav{
+  background-color: #BDC3C7;
+  padding:20px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.empty-state{
+  margin: 70px auto;
+  width: 500px;
+  height: 400px;
+  padding:30px 20px 20px 20px;
+}
+
+.empty-state p{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
