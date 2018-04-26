@@ -9,29 +9,42 @@
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
-    <title>Login</title>
+    <title>Check My Insurance</title>
     </head>
     <body>
 
       <div class="login-panel">
-        <section class="logo">
-          <img src="assets/logo-without-footer.png" width="100" height="100" />
-        </section>
-        <section class="login">
-          <h2 class="login--title">Log In</h2>
+        <!-- <section style="width:300px;">
+          <img src="logo.png" width="500" height="100" />
+        </section> -->
+        <section class="login" style="height:520px;width:500px;">
+          <h2 class="login--title">Welcome to IVIS</h2>
+
+          <p style="padding-left:20px;padding-right:20px;margin-bottom:0">
+            Enter the six characters found on your vehicle plate.
+            If that is not available, enter your 9 digit TRN number found on your driver's license.
+          </p>
           <form class="login--form">
           <div class="form-group">
+            <label>License Plate Number</label>
             <input type="email"
-            class="form-control form-control-lg"
-            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+            class="form-control form-control-lg is-invalid"
+            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. 4444AD">
+            <div class="invalid-feedback">
+                Please enter a valid 6 character license plate number
           </div>
-          <div class="form-group">
-            <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+            <p class="text-center">
+              -- OR --
+            </p>
+            <label>Tax Registration Number</label>
+            <input type="email"
+            class="form-control form-control-lg is-invalid"
+            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. 444333555">
+            <div class="invalid-feedback">
+                Please enter a valid 9 digit TRN
           </div>
-          <a type="button" class="btn btn-secondary btn-lg btn-block" href="dashboard.html">Log In</a>
-          <hr />
-          <a href="reset-password.html">Forgot Password?</a>
-          <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+          </div>
+          <a type="button" class="btn btn-secondary btn-lg btn-block" href>Check Insurance</a>
         </form>
         </section>
       </div>

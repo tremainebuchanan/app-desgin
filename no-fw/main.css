@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+    color: #434C5F;
+    font-size: 32px;
+}
+
+.page-container {
+  max-width: 960px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+.page-container:before,
+.page-container:after {
+  content: " ";
+  display: table;
+}
+
+.page-container:after {
+  clear: both;
+}
+
+.column{
+  float:left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container{
+  width: 370px;
+  background-color: #FFFFFF;
+  margin: 36px auto;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  margin: 18px auto;
+}
+
+.logo > img{
+  width: 100px;
+  height: 100px;
+}
+
+.login-form__input{
+  display: block;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border: 1px solid #CED4DA;
+  border-radius: 3px;
+}
+.login-form__input:focus{
+  outline: none;
+  border: 1px solid #6C757D;
+}
+.login-form__btn{
+  height: 48px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  background-color: #677077;
+  color:#FFFFFF;
+}

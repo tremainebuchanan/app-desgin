@@ -1,3 +1,4 @@
+/* blue - #192f42 */
 body{
   background-color: #BDC3C7;
   font-family: 'Lato', sans-serif;
@@ -8,30 +9,29 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 .login-panel{
   height: 100vh;
-  padding: 60px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .login, .signup, .reset-password{
-  margin: 5px auto;
+  margin: 20px auto;
   border: 1px solid #FFFFFF;
   border-radius: 3px;
   background-color: #FFFFFF;
+  width: 400px;
 }
 
 .login{
-  width: 470px;
   height: 380px;
 }
 
 .signup{
-  width: 470px;
   height: 410px;
 }
 
 .reset-password{
-  width: 470px;
   height: 250px;
 }
 
@@ -53,6 +53,13 @@ h1,h2,h3,h4,h5,h6{
 
 .logo > img{
   border-radius: 3px;
+  width: 100px;
+  height: 100px;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 60px;
 }
 
 .dashboard-panel{
@@ -66,8 +73,15 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.dashboard-sub-nav--lg{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
 .empty-state{
-  margin: 70px auto;
+  margin: 10px auto;
   width: 500px;
   height: 400px;
   padding:30px 20px 20px 20px;
@@ -76,4 +90,8 @@ h1,h2,h3,h4,h5,h6{
 .empty-state p{
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.video-gallery{
+  height: auto;
 }

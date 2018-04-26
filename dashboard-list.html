@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
-    <title>Dashboard</title>
+    <title>Videos</title>
     </head>
     <body style="background-color:#FFFFFF">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -66,35 +66,81 @@
           </div>
         </div>
 
-      </nav>
+      </nav>  
 
-      <!-- <div class="dashboard-sub-nav">
+      <!-- <div class="dashboard-sub-nav dashboard-sub-navlg">
         <div class="container">
-          <div>
-            <h2> My Videos</h2>
-            <a class="float-right btn btn-secondary" href="videos.html">View Video Catalog</a>
-          </div>
+
+            <h2 class="text-center" style="font-size:42px;vertical-align:middle;margin-bottom:20px">
+              Search over <strong>500</strong> videos and tutorials from our catalog</h2>
+              <input type="text" class="form-control form-control-lg"
+              style="margin-bottom:20px;"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="e.g. cost accounting">
+
         </div>
       </div> -->
 
-
         <div class="container">
-          <!--  -->
-          <h2 style="text-align:center;margin-bottom:0px">Welcome Clark Kent!</h2>
           <hr />
-          <div class="empty-state text-center">
-            <img src="http://placehold.it/100?text=VideoIcon" style="margin-bottom:20px"/>
-            <!-- <i class="material-icons">video_library</i> -->
-            <h3>Lets choose your first course video.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a class="btn btn-secondary btn-lg btn-block" href="videos.html">Add a video</a>
+
+          <div class="video-gallery">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">All Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control"
+                style="margin-bottom:20px;"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Filter videos">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom:40px;">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
+                  <a href="#" class="btn btn-secondary">PURCHASE</a> -->
+                </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
+                  <a href="#" class="btn btn-secondary">PURCHASE</a> -->
+                </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
+                  <a href="#" class="btn btn-secondary">PURCHASE</a> -->
+                </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
