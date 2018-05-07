@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
-    <title>Dashboard</title>
+    <title>User Detail</title>
     </head>
     <body style="background-color:#FFFFFF">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -30,24 +30,27 @@
                 <a class="nav-link" href="dashboard.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="videos.html">Videos</a>
+                <a class="nav-link" href="videos.html">Users</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
+                <a class="nav-link" href="#">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscriptions</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="cart.html" class="nav-link" title="Notifications" style="cursor:pointer">
                   <i class="material-icons">shopping_cart</i>
                 </a>
-              </li>
-             <li class="nav-item">
+              </li> -->
+             <!-- <li class="nav-item">
                <a class="nav-link" title="Notifications" style="cursor:pointer">
                  <i class="material-icons">add_alert</i>
                </a>
-             </li>
+             </li> -->
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle"
               title="Logged in as Clark Kent"
@@ -68,32 +71,69 @@
 
       </nav>
 
-      <!-- <div class="dashboard-sub-nav">
+
         <div class="container">
-          <div>
-            <h2> My Videos</h2>
-            <a class="float-right btn btn-secondary" href="videos.html">View Video Catalog</a>
+          <div class="row">
+            <div class="col-md-5">
+              <h2>User - Tremaine Buchanan</h2>
+            </div>
+            <div class="col-md-7">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="user-detail.html">Account Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Subscriptions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Notifications</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div> -->
-
-
-        <div class="container">
-          <!--  -->
-          <h2 style="text-align:center;margin-bottom:0px">Thank you for subscribing!</h2>
           <hr />
-          <div class="empty-state text-center">
-            <img src="http://placehold.it/100?text=Celebration" style="margin-bottom:20px"/>
-            <!-- <i class="material-icons">video_library</i> -->
-            <h3>Your purchase reference number is <br /><strong>ab86d144</strong></h3>
-            <p>
-              What's next?
-              Visit our office located at the Technology Innovation Centre (UTECH)
-              237 Old Hope Road, Kingston 6.
-              <br />Quote the reference number <strong>ab86d144</strong> and pay the total of your invoice.
-            </p>
 
-          </div>
+          <h3>Orders</h3>
+          <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Reference Number</th>
+              <th scope="col">Details</th>
+              <th scope="col">Status</th>
+              <th scope="col">
+                Order Date
+              </th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">12456</th>
+              <td>
+                Introduction to Cost Accouting
+              </td>
+              <td>Pending Payment</td>
+              <td>June 1, 2018</td>
+              <td><a href>  Edit</a></td>
+              <td><a href>  Delete</a></td>
+            </tr>
+            <tr>
+              <th scope="row">12456</th>
+              <td>
+                Introduction to Cost Accouting
+              </td>
+              <td>Payment Received</td>
+              <td>June 2, 2018</td>
+              <td><a href>  Edit</a></td>
+              <td><a href>  Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+
         </div>
 
 
