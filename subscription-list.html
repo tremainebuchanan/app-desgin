@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
-    <title>Users</title>
+    <title>User Detail</title>
     </head>
     <body style="background-color:#FFFFFF">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -30,13 +30,13 @@
                 <a class="nav-link" href="dashboard.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="users.html">Users</a>
+                <a class="nav-link" href="videos.html">Users</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admin-subscription.html">Subscriptions</a>
+                <a class="nav-link" href="#">Subscriptions</a>
               </li>
             </ul>
 
@@ -73,85 +73,56 @@
 
 
         <div class="container">
-          <h2>Users</h2>
+          <div class="row" style="margin-top:20px">
+            <div class="col-md-5">
+              <h2>Tremaine Buchanan</h2>
+            </div>
+            <div class="col-md-7">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="user-detail.html">Account Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Subscriptions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="notifications.html">Notifications</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+
+          <h4>Subscriptions (1)</h4>
           <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email Address</th>
-                <th scope="col">Subscription Start</th>
-                <th scope="col">Subscription End</th>
-                <th scope="col">Status</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mark Otto</td>
-                <td>
-                  markotto@gmail.com
-                </td>
-                <td>
-                  2 days ago
-                </td>
-                <td>
-                  3 days ago
-                </td>
-                <td>
-                  Active
-                </td>
-                <td>
-                  <a href="user-detail.html">View</a>
-                </td>
-                <td>
-                  <a href>Edit</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Mark Otto</td>
-                <td>
-                  markotto@gmail.com
-                </td>
-                <td>
-                  2 days ago
-                </td>
-                <td>
-                  3 days ago
-                </td>
-                <td>
-                  Active
-                </td>
-                <td>
-                  <a href>View</a>
-                </td>
-                <td>
-                  <a href>Edit</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Mark Otto</td>
-                <td>
-                  markotto@gmail.com
-                </td>
-                <td>
-                  2 days ago
-                </td>
-                <td>
-                  3 days ago
-                </td>
-                <td>
-                  Active
-                </td>
-                <td>
-                  <a href>View</a>
-                </td>
-                <td>
-                  <a href>Edit</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <thead>
+            <tr>
+              <th scope="col">Reference Number</th>
+              <th scope="col">Details</th>
+              <th scope="col">Status</th>
+              <th scope="col">Request Date</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">12456</th>
+              <td>
+                Introduction to Cost Accouting
+              </td>
+              <td>Pending Payment</td>
+              <td>June 1, 2018</td>
+              <td>June 1, 2018</td>
+              <td>June 1, 2018</td>
+              <td><a href>  Edit</a></td>
+              <td><a href> Remove</a></td>
+            </tr>
+          </tbody>
+        </table>
+
         </div>
 
 
