@@ -8,14 +8,15 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <title>Videos</title>
     </head>
-    <body style="background-color:#FFFFFF">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <body style="background-color:#f8f9fa">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/logo-without-footer.png" class="nav-logo" />
@@ -26,39 +27,40 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="dashboard.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="videos.html">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
+                <a class="nav-link" href="quizzes.html">Quiz</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="cart.html" class="nav-link" title="Notifications" style="cursor:pointer">
-                  <i class="material-icons">shopping_cart</i>
+                <a class="nav-link" title="Notifications" style="cursor:pointer" href="notifications.html">
+                  <i class="fas fa-shopping-cart"></i> Cart (1)
                 </a>
               </li>
              <li class="nav-item">
                <a class="nav-link" title="Notifications" style="cursor:pointer">
-                 <i class="material-icons">add_alert</i>
+                 <i class="fas fa-bell"></i> Notifications
                </a>
              </li>
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle"
-              title="Logged in as Clark Kent"
+              title="Logged in as shuanciebarrett"
                href="#"
                id="navbarDropdown"
                role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <i class="material-icons">account_circle</i></a>
+                 <i class="fas fa-user-circle"></i> Shuancie Barrett</a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Action</a>
-                 <a class="dropdown-item" href="#">Another action with a lot of text inside of an item</a>
+                <a class="dropdown-item">shuanciebarrett@gmail.com</a>
+                 <a class="dropdown-item" href="user-detail.html">View Profile</a>
+                 <a class="dropdown-item" href="index.html">Sign out</a>
                </div>
              </li>
            </ul>
@@ -66,27 +68,32 @@
           </div>
         </div>
 
-      </nav>  
+      </nav>
 
-      <!-- <div class="dashboard-sub-nav dashboard-sub-navlg">
+      <div class="dashboard-sub-nav dashboard-sub-navlg">
         <div class="container">
-
-            <h2 class="text-center" style="font-size:42px;vertical-align:middle;margin-bottom:20px">
-              Search over <strong>500</strong> videos and tutorials from our catalog</h2>
-              <input type="text" class="form-control form-control-lg"
-              style="margin-bottom:20px;"
+          <div class="row">
+            <div class="col-md-8">
+              <h2>My Subscriptions (3)</h2>
+            </div>
+            <div class="col-md-4">
+              <!-- <button class="btn btn-lg btn-secondary float-right" data-target="#add_question">Add Question</button> -->
+              <input type="text" class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="e.g. cost accounting">
+              placeholder="Filter videos">
+            </div>
+          </div>
+            <!-- <h2 class="text-center" style="font-size:30px;vertical-align:middle;margin-bottom:20px">
+              My Subscriptions</h2> -->
 
         </div>
-      </div> -->
+      </div>
 
-        <div class="container">
-          <hr />
+        <div class="container" style="margin-top:40px">
 
           <div class="video-gallery">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-8">
                 <ul class="nav">
                   <li class="nav-item">
@@ -104,14 +111,17 @@
                 aria-describedby="emailHelp"
                 placeholder="Filter videos">
               </div>
-            </div>
+            </div> -->
 
             <div class="row" style="margin-bottom:40px;">
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <video width="auto" height="250" controls>
+                    <source src="video.webm">
+                  </video>
                   <div class="card-body">
-                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <h5 class="card-title text-center">
+                    <a href class="accent" data-toggle="modal" data-target="#exampleModalCenter">Introduction to Cost Accounting</a></h5>
                   <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
                   <a href="#" class="btn btn-secondary">PURCHASE</a> -->
                 </div>
@@ -119,9 +129,11 @@
               </div>
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <video width="auto" height="250" controls>
+                    <source src="video.webm">
+                  </video>
                   <div class="card-body">
-                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <h5 class="card-title text-center"><a href class="accent" data-toggle="modal" data-target="#exampleModalCenter">Introduction to Cost Accounting</a></h5>
                   <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
                   <a href="#" class="btn btn-secondary">PURCHASE</a> -->
                 </div>
@@ -129,9 +141,11 @@
               </div>
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <video width="auto" height="250" controls>
+                    <source src="video.webm">
+                  </video>
                   <div class="card-body">
-                  <h5 class="card-title text-center">Introduction to Cost Accounting</h5>
+                  <h5 class="card-title text-center"><a href class="accent" data-toggle="modal" data-target="#exampleModalCenter">Introduction to Cost Accounting</a></h5>
                   <!-- <p class="card-text" style="color:#6c757D">1,000 purchased</p>
                   <a href="#" class="btn btn-secondary">PURCHASE</a> -->
                 </div>
@@ -140,6 +154,23 @@
             </div>
 
           </div>
+          <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color:#1b3043;color:#fff">
+                <h5 class="modal-title" id="exampleModalLongTitle">Introduction to Accounting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <video width="auto" height="auto" controls>
+                  <source src="video.webm">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

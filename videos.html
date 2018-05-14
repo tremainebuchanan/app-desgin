@@ -8,14 +8,15 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <title>Videos</title>
     </head>
-    <body style="background-color:#FFFFFF">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <body style="background-color:#f8f9fa">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/logo-without-footer.png" class="nav-logo" />
@@ -26,39 +27,40 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="dashboard.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="videos.html">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
+                <a class="nav-link" href="quizzes.html">Quiz</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a href="cart.html" class="nav-link" title="Notifications" style="cursor:pointer">
-                  <i class="material-icons">shopping_cart</i>
+                  <i class="fas fa-shopping-cart"></i> Cart (1)
                 </a>
               </li>
              <li class="nav-item">
                <a class="nav-link" title="Notifications" style="cursor:pointer">
-                 <i class="material-icons">add_alert</i>
+                 <i class="fas fa-bell"></i> Notifications
                </a>
              </li>
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle"
-              title="Logged in as Clark Kent"
+              title="Logged in as shuanciebarrett"
                href="#"
                id="navbarDropdown"
                role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <i class="material-icons">account_circle</i></a>
+                 <i class="fas fa-user-circle"></i> Shuancie Barrett</a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Action</a>
-                 <a class="dropdown-item" href="#">Another action with a lot of text inside of an item</a>
+                <a class="dropdown-item">shuanciebarrett@gmail.com</a>
+                 <a class="dropdown-item" href="user-detail.html">View Profile</a>
+                 <a class="dropdown-item" href="index.html">Sign out</a>
                </div>
              </li>
            </ul>
@@ -71,7 +73,7 @@
         <div class="container">
 
             <h2 class="text-center" style="font-size:42px;vertical-align:middle;margin-bottom:20px">
-              Search over <strong>500</strong> videos and tutorials from our catalog</h2>
+              Search over <strong><span style="border-bottom:4px solid #86162e">500</span></strong> videos and tutorials from our catalog</h2>
               <input type="text" class="form-control form-control-lg"
               style="margin-bottom:20px;"
               id="exampleInputEmail1"
@@ -85,40 +87,48 @@
 
 
           <div class="video-gallery">
-            <h2 class="text-center">Course Name</h2>
+            <h2 class="text-center">Business Accounting</h2>
             <p class="text-center" style="margin-bottom:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="row" style="margin-bottom:40px;">
 
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <video width="auto" height="250" controls>
+                    <source src="video.webm">
+                  </video>
                   <div class="card-body">
-                  <h5 class="card-title">Introduction to Cost Accounting</h5>
-                  <p class="card-text" style="color:#6c757D">1,000 purchased</p>
+                  <h5 class="card-title" style="font-weight:700">Introduction to Management Accounting</h5>
+                  <p class="card-text accent">1,000 subscriptions</p>
                   <hr />
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+The process of preparing management reports and accounts that provide accurate and timely financial and statistical information required by managers to make day-to-day and short-term decisions.
+
                   </p>
-                  <a href="#" class="btn btn-secondary btn-block">PURCHASE</a>
+                  <a href="cart.html" class="btn btn-secondary btn-block custom-btn">PURCHASE</a>
                 </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
+                  <video width="auto" height="250" controls>
+                    <source src="video.webm">
+                  </video>
                   <div class="card-body">
-                  <h5 class="card-title">Introduction to Cost Accounting</h5>
-                  <p class="card-text" style="color:#6c757D">1,000 purchased</p>
+                  <h5 class="card-title" style="font-weight:700">Company Accounts - Issue of Share Capital</h5>
+                  <p class="card-text accent">200 subscriptions</p>
                   <hr />
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+      These people invest their money in the form of shares . Total capital of company divides in to shares which are transferable from one person to another person . Company is made for general and specific motive.
+
                   </p>
-                  <a href="#" class="btn btn-secondary btn-block">PURCHASE</a>
+                  <a href="cart.html" class="btn btn-secondary btn-block custom-btn">PURCHASE</a>
                 </div>
                 </div>
               </div>
             </div>
-
+<!--
             <div class="row" style="margin-bottom:80px;">
               <div class="col-md-4">
                 <div class="card">
@@ -162,56 +172,12 @@
                 </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <h2 class="text-center">Course Name</h2>
-            <p class="text-center" style="margin-bottom:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="row" style="margin-bottom:40px;">
-              <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-body">
-                  <h5 class="card-title">Introduction to Cost Accounting</h5>
-                  <p class="card-text" style="color:#6c757D">1,000 purchased</p>
-                  <hr />
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                  <a href="#" class="btn btn-secondary btn-block">PURCHASE</a>
-                </div>
-                </div>
-              </div>
-              <!-- <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-body">
-                  <h5 class="card-title">Introduction to Cost Accounting</h5>
-                  <p class="card-text" style="color:#6c757D">1,000 purchased</p>
-                  <hr />
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                  <a href="#" class="btn btn-secondary btn-block">Add Video</a>
-                </div>
-                </div>
-              </div> -->
-              <!-- <div class="col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-body">
-                  <h5 class="card-title">Introduction to Cost Accounting</h5>
-                  <p class="card-text" style="color:#6c757D">1,000 purchased</p>
-                  <hr />
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                  <a href="#" class="btn btn-secondary btn-block">Add Video</a>
-                </div>
-                </div>
-              </div> -->
-            </div>
+
 
           </div>
+
         </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

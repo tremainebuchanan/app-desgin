@@ -8,14 +8,15 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <title>Dashboard</title>
     </head>
-    <body style="background-color:#FFFFFF">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <body style="background-color:#f8f9fa">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/logo-without-footer.png" class="nav-logo" />
@@ -26,39 +27,40 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="dashboard.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="videos.html">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
+                <a class="nav-link" href="quizzes.html">Quiz</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a href="cart.html" class="nav-link" title="Notifications" style="cursor:pointer">
-                  <i class="material-icons">shopping_cart</i>
+                  <i class="fas fa-shopping-cart"></i> Cart (1)
                 </a>
               </li>
              <li class="nav-item">
-               <a class="nav-link" title="Notifications" style="cursor:pointer">
-                 <i class="material-icons">add_alert</i>
+               <a class="nav-link" title="Notifications" style="cursor:pointer" href="notifications.html">
+                 <i class="fas fa-bell"></i> Notifications
                </a>
              </li>
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle"
-              title="Logged in as Clark Kent"
+              title="Logged in as shuanciebarrett"
                href="#"
                id="navbarDropdown"
                role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <i class="material-icons">account_circle</i></a>
+                 <i class="fas fa-user-circle"></i> Shuancie Barrett</a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Action</a>
-                 <a class="dropdown-item" href="#">Another action with a lot of text inside of an item</a>
+                <a class="dropdown-item">shuanciebarrett@gmail.com</a>
+                 <a class="dropdown-item" href="user-detail.html">View Profile</a>
+                 <a class="dropdown-item" href="index.html">Sign out</a>
                </div>
              </li>
            </ul>
@@ -78,21 +80,34 @@
       </div> -->
 
 
-        <div class="container">
+        <div class="container" style="margin-top:20px;" >
           <!--  -->
-          <h2 style="text-align:center;margin-bottom:0px">Thank you for subscribing!</h2>
-          <hr />
-          <div class="empty-state text-center">
-            <img src="http://placehold.it/100?text=Celebration" style="margin-bottom:20px"/>
-            <!-- <i class="material-icons">video_library</i> -->
-            <h3>Your purchase reference number is <br /><strong>ab86d144</strong></h3>
-            <p>
-              What's next?
-              Visit our office located at the Technology Innovation Centre (UTECH)
-              237 Old Hope Road, Kingston 6.
-              <br />Quote the reference number <strong>ab86d144</strong> and pay the total of your invoice.
-            </p>
+          <!-- <h2 style="text-align:center;margin-bottom:0px">Thank you for subscribing!</h2> -->
 
+          <div class="text-center">
+            <h2 style="text-align:center;margin-bottom:0px;margin-top:40px">Thank you for subscribing!</h2>
+            <i class="fas fa-handshake fa-7x"></i>
+            <h4 >Your subscription reference number is <span class="accent">ab86d144</span></h4>
+            <!-- <hr /> -->
+          </div>
+          <div style="margin-top:10px">
+            <h3 class="text-center">What's next?</h3>
+            <ul style="list-style:none">
+              <li>
+                <h5 style="font-weight:400"><span class="accent"><strong>Step One:</strong></span> Visit our office located at the Technology Innovation Centre (UTECH)
+                237 Old Hope Road, Kingston 6.</h5>
+              </li>
+              <li>
+                <h5 style="font-weight:400"><span class="accent"><strong>Step Two:</strong> </span> Quote the reference number <span class="accent"><strong>ab86d144</strong></span>
+                and pay the total of <span class="accent"><strong>$3000.00</strong></span></h5>
+              </li>
+              <li>
+                <h5 style="font-weight:400"><span class="accent"><strong>Step Three:</strong> </span> An email will be sent to <a href class="accent">shuanciebarrett@gmail.com </a>notifying the availability of your videos</a></h5>
+              </li>
+              <li>
+                <h5 style="font-weight:400"><span class="accent"><strong>Step Four:</strong></span> Watch your videos <a href="dashboard-list.html" class="accent">here</a></h5>
+              </li>
+            </ul>
           </div>
         </div>
 
