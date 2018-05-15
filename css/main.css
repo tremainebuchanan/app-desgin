@@ -12,7 +12,9 @@ h1,h2,h3,h4,h5,h6{
   /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
-
+label{
+  font-weight: 700;
+}
 nav{
   background-color:#1b3043;
 }
@@ -134,4 +136,10 @@ nav{
 
 .table th{
   border-top:0;
+}
+
+.question-header, .dialog-header{
+  background-color: #1b3043;
+  color: #FFFFFF;
+  font-weight: 700;
 }
