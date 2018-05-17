@@ -16,6 +16,10 @@ nav{
   background-color:#1b3043;
 }
 
+hr.admin{
+  border-top: 2px solid #86162e;
+}
+
 .body-background-color{
   background-color:#f8f9fa;
 }
@@ -167,4 +171,15 @@ nav{
   background-color: #1b3043;
   color: #FFFFFF;
   font-weight: 700;
+}
+
+.admin-card-list{
+  margin-top:20px;
+}
+.admin-card-title--blue{
+  color:#434C5F;
+}
+
+.admin-card-desc{
+  font-weight: 400;
 }
