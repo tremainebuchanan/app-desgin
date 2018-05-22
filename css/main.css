@@ -32,6 +32,9 @@ hr.admin{
   border-bottom: 4px solid #86162e;
 }
 
+.default-page-bg{
+  background-color:#f8f9fa;
+}
 
 .primary-background{
   background-color: #BDC3C7;
@@ -87,6 +90,10 @@ hr.admin{
   height: 300px;
 }
 
+.login-page-bg{
+  background-color:#1b3043;
+}
+
 .login--form{
   margin-top: 40px;
   padding: 0 20px 0 20px;
@@ -125,13 +132,12 @@ hr.admin{
   color:#ffffff;
 }
 
-/* .dashboard-sub-nav--lg{
-  height: 200px;
-  margin-bottom: 20px;
-} */
-
 .video-gallery-container{
   margin-top: 40px;
+}
+
+.video-gallery-row{
+  margin-bottom: 40px;
 }
 
 .empty-state-container{
@@ -182,4 +188,70 @@ hr.admin{
 
 .admin-card-desc{
   font-weight: 400;
+}
+
+.modal-header-bg{
+  background-color:#1b3043;
+  color:#fff;
+}
+
+.alert-custom{
+  margin-top:20px;
+  font-size:20px;
+  font-weight:700;
+}
+
+.question-card{
+  margin-bottom:20px;
+}
+
+.question-card-title{
+  background-color:#1b3043;
+  color:#fff;
+}
+/**
+ * Responsive
+ */
+@media only screen and (max-width: 576px){
+  .login, .signup,.reset-password{
+    width: 100%;
+    margin: 40px auto;
+  }
+  .login--form{
+    margin-top:20px;
+  }
+
+  .empty-state{
+    width: 100%;
+  }
+
+  .table-lg,.table-md{
+    display: none;
+  }
+
+  .table-sm{
+    width: 100%;
+    padding:0;
+    margin: 0;
+  }
+
+  .video-category-title{
+    margin-top: 20px;
+  }
+
+  .video-gallery-item{
+    margin-bottom:20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  .table-sm, .table-lg{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .table-sm,.table-md{
+    display: none;
+  }
 }
